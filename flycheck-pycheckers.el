@@ -165,8 +165,8 @@
 (require 'flycheck)
 
 (defvar flycheck-pycheckers-command
-  (executable-find (concat (file-name-directory (or load-file-name buffer-file-name))
-                           "bin/pycheckers.py")))
+  (concat (file-name-directory (or load-file-name buffer-file-name))
+                           "pycheckers.py"))
 
 (flycheck-def-args-var flycheck-pycheckers-args python-pycheckers
   )
